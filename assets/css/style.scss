@@ -42,8 +42,8 @@ $duration: 30s;
   .ticker {
 
     display: inline-block;
-    height: 4rem;
-    line-height: 4rem;  
+    height: 20em;
+    line-height: 20em;  
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
@@ -62,7 +62,7 @@ $duration: 30s;
       display: inline-block;
 
       /* padding: 0 2rem;*/
-      font-size: 2rem;
+      font-size: 12rem;
       color: white;   
       text-align: center;
     }
