@@ -1,0 +1,100 @@
+---
+---
+
+@import "{{ site.theme }}";
+.wwdg{
+  font-size:100pt;
+}
+.icon_links{
+  width:32px;
+  height:32px;
+}
+.mobile_post{
+  display:none;
+}
+.page-header { 
+  background-image: url(https://chafear.github.io/WineWithDiscount/wine4.png);
+  height: 100vh;
+}
+.im{
+  height:100%;
+  width:100%;
+}
+
+body{
+  background-color:#181818;
+  line-height: 1.5em;
+}
+.main-content h1, .main-content h2, .main-content h5{
+  color:#c6c6c6;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.main-content h1{
+  margin-bottom:1em;
+}
+.page-header {
+  background-color:#181818;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.main-content p {
+    margin-bottom: 0em;
+}
+.news-content{
+  font-weight: lighter;
+}
+h5{
+  opacity: 0.4;
+}
+.post{
+  margin-block-end: 3.5em; 
+}
+.item1 { grid-area: left; }
+.item2 { grid-area: right; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left right';
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: 35% 65%;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 20px 0;
+}
+.superlink{
+  font-size: 100pt;
+  line-height: 1;
+}
+@media only screen and (max-device-width: 600px) {
+.page-header{
+  background-image: url(https://chafear.github.io/WineWithDiscount/wine_small.png);
+  background-size: 100% 100%;
+  max-width: 1500px;
+  height: 500px;
+}
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+    'left right';
+  grid-gap: 0px;
+  padding: 0px;
+  grid-template-columns: 0 100%;
+}
+  .item1 {
+    display: none; 
+  }
+.mobile_post{
+  display:flex;
+  margin-bottom:1em;
+}
+.main-content h1{
+  margin-bottom:0.2em;
+}
+}
